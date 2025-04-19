@@ -1,0 +1,42 @@
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!DOCTYPE html>
+<html>
+  <body>
+  
+     <h1>DULCERIA ESTRELLA 💫</h1>
+    
+
+    <div>
+      <label>Nombre del dulce🍬</label>
+      <input type="text" id="nombre">
+    </div>
+  
+    <div>
+      <label>Precio💲</label>
+      <input type="text" id="precio">
+    </div>
+  
+    <div>
+      <label>Cantidad🔢</label>
+      <input type="text" id="cantidad">
+    </div>
+  
+    <div>
+      <label>Descripción📝 </label>
+      <input type="text" id="descripcion">
+    </div>
+  
+    <button class="btn-agregar" onclick="postDulce()">Agregar dulce</button>
+    <button class="btn-ver" onclick="getDulces()">Ver dulces</button>
+    <button class="btn-actualizar" id="updateBtn" onclick="updateDulce()" style="display:none;">Actualizar dulce</button>
+  
+    <div id="resultado"></div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="callrestapi.js"></script>
+  
+  </body>
+  </html>
