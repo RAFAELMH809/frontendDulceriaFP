@@ -1,6 +1,6 @@
 /* ====== Fondo general ====== */
 body {
-  background-color: #fff8f0;
+  background-color: black;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 2rem;
@@ -12,10 +12,10 @@ body {
 
 /* ====== Título ====== */
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem; /* Puedes ajustar el tamaño según lo prefieras */
   color: #e91e63;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 5px #ff80ab;
+  text-shadow: 0px 0px 10px rgba(233, 30, 99, 0.8), 0px 0px 20px rgba(233, 30, 99, 0.6), 0px 0px 30px rgba(233, 30, 99, 0.4);
   text-align: center;
 }
 
@@ -30,19 +30,24 @@ div {
 label {
   font-weight: bold;
   margin-bottom: 5px;
+  color: #e91e63; /* Color rosa para las etiquetas */
 }
 
-input {
+input, select {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ffb6c1;
   outline: none;
   background-color: #fff;
+  font-size: 1rem;
   transition: border-color 0.3s ease;
+  color: #e91e63; /* Color rosa para los textos dentro de los campos */
+  text-shadow: 0px 0px 5px rgba(233, 30, 99, 0.8); /* Efecto de texto fosforescente */
 }
 
-input:focus {
+input:focus, select:focus {
   border-color: #e91e63;
+  text-shadow: 0px 0px 10px rgba(233, 30, 99, 1), 0px 0px 15px rgba(233, 30, 99, 0.8);
 }
 
 /* ====== Botones generales (estilo base) ====== */
@@ -55,6 +60,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-shadow: 0 0 5px rgba(233, 30, 99, 0.8), 0 0 10px rgba(233, 30, 99, 0.6); /* Brillo en los botones */
 }
 
 /* ====== Botón Agregar ====== */
@@ -63,6 +69,7 @@ button {
 }
 .btn-agregar:hover {
   background-color: #d81b60;
+  text-shadow: 0 0 15px rgba(233, 30, 99, 1), 0 0 20px rgba(233, 30, 99, 1); /* Brillo intenso al pasar el mouse */
 }
 
 /* ====== Botón Ver ====== */
@@ -71,6 +78,7 @@ button {
 }
 .btn-ver:hover {
   background-color: #d81b60;
+  text-shadow: 0 0 15px rgba(233, 30, 99, 1), 0 0 20px rgba(233, 30, 99, 1);
 }
 
 /* ====== Botón Editar ====== */
@@ -79,6 +87,7 @@ button {
 }
 .btn-editar:hover {
   background-color: #d81b60;
+  text-shadow: 0 0 15px rgba(233, 30, 99, 1), 0 0 20px rgba(233, 30, 99, 1);
 }
 
 /* ====== Botón Actualizar ====== */
@@ -87,14 +96,16 @@ button {
 }
 .btn-actualizar:hover {
   background-color: #d81b60;
+  text-shadow: 0 0 15px rgba(233, 30, 99, 1), 0 0 20px rgba(233, 30, 99, 1);
 }
 
 /* ====== Botón Eliminar (Rojo personalizado) ====== */
 .btn-eliminar {
-  background-color: #e91e63;;
+  background-color: #e91e63;
 }
 .btn-eliminar:hover {
   background-color: #d81b60;
+  text-shadow: 0 0 15px rgba(233, 30, 99, 1), 0 0 20px rgba(233, 30, 99, 1);
 }
 
 /* ====== Contenedor de resultados ====== */
@@ -116,17 +127,37 @@ td, th {
   border: 1px solid #ffb6c1;
   padding: 10px;
   text-align: left;
+  text-shadow: 0px 0px 5px rgba(233, 30, 99, 0.8); /* Efecto fosforescente en las celdas */
 }
 
 th {
   background-color: #fce4ec;
   color: #880e4f;
+  text-shadow: 0px 0px 10px rgba(233, 30, 99, 0.6), 0px 0px 15px rgba(233, 30, 99, 0.4);
 }
 
 tr:hover {
   background-color: #fff0f5;
+  text-shadow: 0px 0px 10px rgba(233, 30, 99, 0.8);
 }
 
+/* Estilo para el campo de selección (color y sabor) */
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffb6c1;
+  outline: none;
+  background-color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%; /* Para que ocupe todo el ancho disponible */
+  text-shadow: 0px 0px 5px rgba(233, 30, 99, 0.8); /* Efecto de brillo */
+}
+
+select:focus {
+  border-color: #e91e63;
+  text-shadow: 0px 0px 10px rgba(233, 30, 99, 1), 0px 0px 15px rgba(233, 30, 99, 0.8);
+}
 
   
   
